@@ -1,6 +1,8 @@
 /**
 
-  @arrow mixin
+  @arrows mixin
+----------------------------------------------------------
+  base/mixins/_arrows.scss
 ----------------------------------------------------------
 
   A mixin to create an arrow relative to a parent.  Note
@@ -15,7 +17,7 @@
     Border Color
     Border Size
 
-  Usage:
+  Usage: Arguments for arrow() mixin
   @include arrow( $position, $bg-color, $size, $border-color, $border-size );
 
 --------------------------------------------------------- */

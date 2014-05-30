@@ -14,13 +14,8 @@
 
 
 
-/* @anchors
---------------------------------------------------------
-
-  Anchors will have this base styling
-
------------------------------------------------------- */
-
+// @anchors
+//
 a {
   color: inherit;
   @include transition(opacity 1s, background-color 1s, color 1s);
@@ -36,13 +31,8 @@ a {
 
 
 
-/* @webkit-tap-highlight
---------------------------------------------------------
-
-  Declare the webkit tap highlight style
-
------------------------------------------------------- */
-
+// @webkit-tap-highlight
+//
 body {
   -webkit-tap-highlight-color: rba(0, 0, 0, .35);
 }

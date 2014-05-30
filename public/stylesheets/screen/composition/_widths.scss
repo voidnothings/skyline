@@ -19,17 +19,8 @@
 
 ---------------------------------------------------------  */
 
-
-
-
-
-
-/* @viewport-agnostic
---------------------------------------------------------
-
-  These will be honored at every viewport
-
------------------------------------------------------- */
+// No viewport restrictions
+//
 
 // Whole
 .one-whole         { width: 100%; }
@@ -103,14 +94,8 @@
 
 
 
-/* @breakpoint__sm
---------------------------------------------------------
-
-  Sizes that are applied if viewport is at least at
-  the $breakpoint__sm size
-
------------------------------------------------------- */
-
+// @breakpoint__sm
+//
 @include bp-at-least($breakpoint__sm){
 
    // Whole
@@ -186,14 +171,8 @@
 
 
 
-/* @breakpoint__md
---------------------------------------------------------
-
-  Sizes that are applied if viewport is at least at
-  the $breakpoint__md size
-
------------------------------------------------------- */
-
+// @breakpoint__md
+//
 @include bp-at-least($breakpoint__md){
 
   // Whole
@@ -270,14 +249,8 @@
 
 
 
-/* @breakpoint__lg
---------------------------------------------------------
-
-  Sizes that are applied if viewport is at least at
-  the $breakpoint__lg size
-
------------------------------------------------------- */
-
+// @breakpoint__lg
+//
 @include bp-at-least($breakpoint__lg){
 
     // Whole
@@ -355,14 +328,8 @@
 
 
 
-/* @breakpoint__xl
---------------------------------------------------------
-
-  Sizes that are applied if viewport is at least at
-  the $breakpoint__lg size
-
------------------------------------------------------- */
-
+// @breakpoint__xl
+//
 @include bp-at-least($breakpoint__xl){
 
   // Whole

@@ -6,7 +6,7 @@
 --------------------------------------------------------
 
   Define the fonts used in this app and declare variables
-  to be used in your CSS.
+  and sass placeholders to be used in your CSS.
 
   If you are using a webfont, see the base/_mixins.scss
   file for deets on the font embed mixin that is used to
@@ -21,10 +21,23 @@
 
 
 
-/* @sans
+/* @sans stack
 --------------------------------------------------------
 
-   use $sans for this font
+  A global sans font stack.
+
+  Usage: Use the sans stack
+  .element {
+    font-family: $sans;
+  }
+
+  Placeholder classes are also defined to include additional
+  properties like font-weight and font-style.
+
+  Usage: Use sans light on an element
+  .element {
+    @extend %sans--light;
+  }
 
 ------------------------------------------------------ */
 
@@ -58,12 +71,25 @@ $sans: helvetica, sans-serif;
 
 
 
-/* @serif
+/* @serif stack
 --------------------------------------------------------
 
-  Use $serif for this font
+  A global serif font stack.
 
--------------------------------------------------------- */
+  Usage: Use the serif stack
+  .element {
+    font-family: $serif;
+  }
+
+  Placeholder classes are also defined to include additional
+  properties like font-weight and font-style.
+
+  Usage: Use serif light on an element
+  .element {
+    @extend %serif--light;
+  }
+
+------------------------------------------------------ */
 
 $serif: georgia, times;
 

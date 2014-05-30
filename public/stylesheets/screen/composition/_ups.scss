@@ -56,84 +56,80 @@
 
 -----------------------------------------------------  */
 
-
-
-
-
-/* @viewport-agnostic
---------------------------------------------------------
-
-  These will be honored at every viewport
-
------------------------------------------------------- */
+// No viewport restriction
 
 // Two up
 .two-up > * {
   width: 50%;
+  float: left;
 }
 
 // Three up
 .three-up > * {
   width: 33.333333%;
+  float: left;
 }
 
 // Four up
 .four-up > * {
   width: 25%;
+  float: left;
 }
 
 // Five up
 .five-up > * {
   width: 20%;
+  float: left;
 }
 
 // Six up
 .six-up > * {
   width: 16.6666666%;
+  float: left;
 }
 
 // Seven up
 .seven-up > * {
  width: 14.285714286%;
+  float: left;
 }
 
 // Eight up
 .eight-up > *{
   width: 12.5%;
+  float: left;
 }
 
 // Nine up
 .nine-up > *{
   width: 11.111111111%;
+  float: left;
 }
 
 // Ten up
 .ten-up {
   width: 10%;
+  float: left;
 }
 
 // Eleven up
 .eleven-up > *{
  width: 9.090909091%;
+ float: left;
 }
 
 // Twelve up
 .twelve-up > * {
   width: 8.333333333%;
+  float: left;
 }
 
 
 
 
 
-/* @breakpoint__xs
---------------------------------------------------------
-
-  Up sizes that are applied if viewport is at least at
-  the $breakpoint__xs size
-
------------------------------------------------------- */
-
+// @breakpoint__xs
+//
 @include bp-at-least($breakpoint__xs){
 
   // Two up
@@ -195,14 +191,8 @@
 
 
 
-/* @breakpoint__sm
---------------------------------------------------------
-
-  Up sizes that are applied if viewport is at least at
-  the $breakpoint__sm size
-
------------------------------------------------------- */
-
+// @breakpoint__sm
+//
 @include bp-at-least($breakpoint__sm){
 
   // Two up
@@ -266,14 +256,8 @@
 
 
 
-/* @breakpoint__md
---------------------------------------------------------
-
-  Up sizes that are applied if viewport is at least at
-  the $breakpoint__md size
-
------------------------------------------------------- */
-
+// @breakpoint__md
+//
 @include bp-at-least($breakpoint__md){
 
   // Two up
@@ -336,14 +320,8 @@
 
 
 
-/* @breakpoint__lg
---------------------------------------------------------
-
-  Up sizes that are applied if viewport is at least at
-  the $breakpoint__lg size
-
------------------------------------------------------- */
-
+// @breakpoint__lg
+//
 @include bp-at-least($breakpoint__lg){
 
   // Two up
@@ -407,14 +385,8 @@
 
 
 
-/* @breakpoint__xl
---------------------------------------------------------
-
-  Up sizes that are applied if viewport is at least at
-  the $breakpoint__xl size
-
------------------------------------------------------- */
-
+// @breakpoint__xl
+//
 @include bp-at-least($breakpoint__xl){
 
   // Two up

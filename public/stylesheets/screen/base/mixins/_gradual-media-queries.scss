@@ -2,11 +2,18 @@
 
  @gradual media queries mixin
 --------------------------------------------------------
+  base/mixins/_gradual-media-queries.scss
+-----------------------------------------------------------
 
- The mixin takes arguments of start-width, start-fontsize,
- end-width, and end-fontsize and then creates media queries
- between those start and end points at another argument
- value, increment-width.
+  The mixin takes arguments of start-width, start-fontsize,
+  end-width, and end-fontsize and then creates media queries
+  between those start and end points at another argument
+  value, increment-width.
+
+  Usage: Apply gradual media queries to the html element
+  html {
+    @include gradual-media-queries($breakpoint__xs, 75%, $breakpoint__xl, 150%, 20em);
+  }
 
 ------------------------------------------------------ */
 

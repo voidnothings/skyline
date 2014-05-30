@@ -2,7 +2,7 @@
 
   @font-face import mixin
 -----------------------------------------------------------
-  _1_foundations/_mixins/_font-face-importer.scss
+  base/mixins/_font-face-importer.scss
 -----------------------------------------------------------
 
   Use this mixin to embed a font
@@ -12,7 +12,7 @@
   file and the filename WITHOUT the file extension.  The
   extensions are added here in the mixin
 
-  Usage:
+  Usage: Arguments for embed-font() mixin.
   @include embed-font($font-name, $font-filepath-and-name);
 
 --------------------------------------------------------- */

@@ -116,14 +116,6 @@ input:focus {
 }
 
 
-// Submit
-// input[type=submit] {
-//   &:hover,
-//   &:focus {
-//     @extend .accent-bg;
-//     color: white;
-//   }
-// }
 
 
 
@@ -160,16 +152,16 @@ input:focus {
 
 ------------------------------------------------------ */
 
-// select {
-//   width: 100%;
-//   font-size: 1rem;
-//   &.select--s {
-//     font-size: .5rem;
-//   }
-//   &.select--l {
-//     font-size: 1.5rem;
-//   }
-// }
+select {
+  width: 100%;
+  font-size: 1rem;
+  &.select--s {
+    font-size: .5rem;
+  }
+  &.select--l {
+    font-size: 1.5rem;
+  }
+}
 
 
 
@@ -231,30 +223,30 @@ textarea {
 
 ------------------------------------------------------ */
 
-// input[type=radio] {
-//   -webkit-appearance: none;
-//   width: 1em;
-//   height: 1em;
-//   border-radius: 50%;
-//   border: 1px solid #444;
-//   background: transparent;
-//   &:checked {
-//     background: #222;
-//   }
-// }
+input[type=radio] {
+  -webkit-appearance: none;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 1px solid #444;
+  background: transparent;
+  &:checked {
+    background: #222;
+  }
+}
 
 
-// .label--radio {
-//   display: inline-block;
-//   position: relative;
-//   cursor: pointer;
-//   padding-left: 1.25em;
-//   input {
-//     position: absolute;
-//     top: .2em;
-//     left: 0;
-//   }
-// }
+.label--radio {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 1.25em;
+  input {
+    position: absolute;
+    top: .2em;
+    left: 0;
+  }
+}
 
 
 
@@ -275,45 +267,27 @@ textarea {
 
 ------------------------------------------------------ */
 
-// input[type=checkbox] {
-//   -webkit-appearance:none;
-//   width: 1em;
-//   height: 1em;
-//   border: 1px solid #444;
-//   background: transparent;
-//   &:checked {
-//     background: #222;
-//   }
-// }
+input[type=checkbox] {
+  -webkit-appearance:none;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #444;
+  background: transparent;
+  &:checked {
+    background: #222;
+  }
+}
 
-// .label--checkbox {
-//   display: inline-block;
-//   position: relative;
-//   cursor: pointer;
-//   padding-left: 1.25em;
-//   input {
-//     position: absolute;
-//     top: .2em;
-//     left: 0;
-//   }
-// }
-
-
-
-
-
-/* @textareas
---------------------------------------------------------
-
-  Base styling for textareas
-
-  Example: Textarea
-  <textarea name="schramburger">Hello, there.</textarea>
-
------------------------------------------------------- */
-
-textarea {
-  width: 100%;
+.label--checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 1.25em;
+  input {
+    position: absolute;
+    top: .2em;
+    left: 0;
+  }
 }
 
 
@@ -583,28 +557,28 @@ fieldset {
 
 ------------------------------------------------------ */
 
-// .field__input-group {
-//   display: block;
-//   > * {
-//     display: inline-block;
-//     margin-right: .5em;
-//     &:last-child {
-//       margin-right: 0;
-//     }
-//   }
-// }
+.field__input-group {
+  display: block;
+  > * {
+    display: inline-block;
+    margin-right: .5em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 
-// // List mod
-// .field__input-group--list {
-//   display: block;
-//   > * {
-//     display: block;
-//     margin: .5em 0;
-//     &:last-child {
-//       margin-bottom: 0;
-//     }
-//   }
-// }
+// List mod
+.field__input-group--list {
+  display: block;
+  > * {
+    display: block;
+    margin: .5em 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
 
 
@@ -748,18 +722,3 @@ fieldset {
 
 // Note - there are no special classses/styles for this -
 // This is here in the file just to illustrate how to do it.
-
-
-
-
-
-
-
-
-
-
-
-/* Have something else to add?
---------------------------------------------------------
-  + Add any new modifier classes below
------------------------------------------------------- */

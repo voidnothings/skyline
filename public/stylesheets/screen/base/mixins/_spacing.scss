@@ -2,18 +2,18 @@
 
   @spacing mixin
 --------------------------------------------------------
+  base/mixins/_spacing.css
+-----------------------------------------------------------
 
-  Mixin for spacing
+  Mixin for consistent spacing.  It accepts integers, which
+  create multiples of the $spacing unit, 'a' or 'auto' which
+  creates a value of 'auto', or 'n' which does not create anything
+  and is just ignored.
 
-  Usage:
-  @include padding(1 n 2 n);
-  Values: any number, or n
-  SCUT uses a convention that I really like: when specifying
-  top, right, bottom, and left if you want to omit something
-  use 'n' instead of a value.
-
-  Our above example will give you padding-top of 1*spacing and
-  padding-bottom of 2*spacing
+  Usage: include padding of 1 spacing unit at top, 2 at bottom
+  .example-module {
+    @include padding(1 n 2 n);
+  }
 
 -----------------------------------------------------  */
 

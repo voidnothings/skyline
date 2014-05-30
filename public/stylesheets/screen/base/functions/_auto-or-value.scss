@@ -2,10 +2,11 @@
 
   @autoOrValue function
 --------------------------------------------------------
-  _1_foundations/_functions/_auto-or-value.scss
+  base/functions/_auto-or-value.scss
 --------------------------------------------------------
 
-  Function to determine if input is auto or a value
+  Function used by the spacing mixing to determine if
+  the argument input is auto ('a' or 'auto') or a value
 
 -----------------------------------------------------  */
 

@@ -2,7 +2,7 @@
 
   @reset
 ---------------------------------------------------------
-  _1_foundations/reset.scss
+  base/reset.scss
 --------------------------------------------------------
 
   This reset institutes the border-box box model and then
@@ -11,7 +11,7 @@
   Throughout Skyline, each partial has it's own resets.
   This allows you to only use what you need.
 
-  Credit goes to Normalize, which is used a lot.
+  Many resets are based on normalize:
   http://normalize.css v2.1.0 http://git.io/normalize
 
 --------------------------------------------------------- */

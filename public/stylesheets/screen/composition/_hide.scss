@@ -7,51 +7,114 @@
 
   Utility state classes to hide things in different ways
 
-  Note: there is room for improvement here.
-
 --------------------------------------------------------- */
 
-// The classic, display: none
+
+
+/* @is-hidden
+--------------------------------------------------------
+
+  The classic, display: none;
+
+  Example: The element below is hidden
+  <h1 class="is-hidden">I'm hiding<h1>
+
+------------------------------------------------------ */
+
 .is-hidden {
   display: none;
 }
 
 
-// Use this if you still need js access to this element
-// it's visually hidden but still in the DOM
-.is-visually-hidden {
+
+/* @is-visually-hidden
+--------------------------------------------------------
+
+  Use this if you still need js access to this element
+  it's visually hidden but still in the DOM
+
+  Example: The element below is hidden
+  <h1 class="is-visually-hidden">I'm hiding<h1>
+
+------------------------------------------------------ */
+
+@mixin visually-hide() {
   position: absolute;
   left: -9999%;
   height: 0;
   padding: 0;
   margin: 0;
   opacity: 0;
+  // TODO: If clip is supported: MODERNIZR
+  border: 0;
+  clip: rect(0 0 0 0); // background-image options like border-clip is ie9+
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.is-visually-hidden {
+  @include visually-hide();
 }
 
+
+
+
+
+/* @responsive hiders
+--------------------------------------------------------
+
+  These are helper classes to hide an element at a
+  certain breakpoint and above.
+
+  Example: Responsive Hiders
+  <p class="xs-is-hidden">You should only see me below the xs breakpoint</p>
+  <p class="sm-is-hidden">You should only see me below the sm breakpoint</p>
+  <p class="md-is-hidden">You should only see me below the md breakpoint</p>
+  <p class="lg-is-hidden">You should only see me below the lg breakpoint</p>
+  <p class="xl-is-hidden">You should only see me below the xl breakpoint</p>
+
+------------------------------------------------------ */
 
 // Responsive hiders
-@include bp-at-least($breakpoint__xs){
-  .hide__xs {
+@include bp-at-least($breakpoint__xs) {
+  .xs-is-hidden {
     display: none;
   }
-}
-@include bp-at-least($breakpoint__sm){
-  .hide__sm {
-    display: none;
+  .xs-is-visually-hidden {
+    @include visually-hide();
   }
 }
-@include bp-at-least($breakpoint__md){
-  .hide__md {
+@include bp-at-least($breakpoint__sm) {
+  .sm-is-hidden {
     display: none;
   }
-}
-@include bp-at-least($breakpoint__lg){
-  .hide__lg {
-    display: none;
+  .sm-is-visually-hidden {
+    @include visually-hide();
   }
 }
-@include bp-at-least($breakpoint__xl){
-  .hide__xl {
+@include bp-at-least($breakpoint__md) {
+  .md-is-hidden {
     display: none;
   }
+  .md-is-visually-hidden {
+    @include visually-hide();
+  }
 }
+@include bp-at-least($breakpoint__lg) {
+  .lg-is-hidden {
+    display: none;
+  }
+  .lg-is-visually-hidden {
+    @include visually-hide();
+  }
+}
+@include bp-at-least($breakpoint__xl) {
+  .xl-is-hidden {
+    display: none;
+  }
+  .xl-is-visually-hidden {
+    @include visually-hide();
+  }
