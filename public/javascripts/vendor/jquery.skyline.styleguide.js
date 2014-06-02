@@ -384,7 +384,7 @@ $(function(){
         $(this).toggleClass("is-active").next('.sg-show-code__content').toggleClass("is-active");
       });
 
-      Prism.highlightAll();
+      // Prism.highlightAll();
 
     }, 500);
 
