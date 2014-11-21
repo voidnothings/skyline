@@ -5,8 +5,15 @@
   modules/_site.scss
 --------------------------------------------------------
 
-  This is a utility div to wrap the whole site.
+  We use the naming convention of .site-* for global
+  modules like the header, main, and footer.
+
+  Sometimes it's beneficial to have a wrapping element
+  around the site, directly following the <body>. In
+  this case, we call that .site.
 
 ------------------------------------------------------ */
 
-.site {}
+.site {
+
+}

@@ -15,38 +15,34 @@ The starter files contain as little code as possible.  The structure consists of
 
 ```
 ├── fonts
-|   ├──  (open source icon font here)
+|   ├── (example open source font here)
 |
 ├── images
 |   ├── (placeholder images are here)
 |
-├── javascripts
-|   ├── app
-|       ├── application.js
-|   ├── vendor
-|       ├── (lots of front-end jquery plugins)
-|       ├── jquery.skyline.gridguide.js
-|       ├── jquery.skyline.smartresize.js
-|       ├── jquery.skyline.styleguide.js
-|   ├── utility
-|       ├── ios-orientationchange-fix.js
-|       ├── modernizr.js (you will usually create your own custom build)
-|       ├── respond.js (use if supporting IE8)
-|       ├── selectivizr.js (use if supporting IE8)
-|
 ├── stylesheets
 |   ├── base
-|       ├── variables, resets, mixins, functions, etc.
+|       ├── variables, resets, mixins, global assets like fonts and icons, etc.
 |   ├── elements
 |       ├── styles for base elements (p, ul, img, form, input, etc.)
 |   ├── layout
 |       ├── grids, widths, utilities, etc.
 |   ├── modules
 |       ├── styles for objects/modules you create (.site-header, .hero, .page, .bio, .site-footer, etc.)
-|   ├── vendor
-|       ├── styles related to plugins
-|   ├── README.md
+|   ├── README.md (credits and info about Skyline SCSS)
+|
 |   ├── screen.scss (the manifest file that pulls in all the partials and compiles into screen.css)
+|
+├── example-forms.html
+|
+├── example-grids.html
+|
+├── example-modules.html
+|
+├── index.html
+|
+├── README.md
+
 ```
 
 ### Usage
@@ -56,5 +52,5 @@ If you want a simple route, you can view the index.html page in a browser and it
 
 
 ### Documentation
-Extensive docs are in the works, but not yet released. But Skyline makes it easy by adding detailed documentation in the comments of the scss partials themselves. Descriptions are right next to the actual code, making it simple to learn how it works.
+Extensive docs are in the works, but not yet released. However, Skyline makes it easy by adding detailed documentation in the comments of the scss partials themselves. Descriptions are right next to the actual code, making it simple to learn how it works.
 

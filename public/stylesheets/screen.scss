@@ -1,12 +1,14 @@
 /****
 
-  MAIN STYLESHEET for ***YOUR-SITE-NAME-HERE***
+  MAIN STYLESHEET for [* Site Name Here *]
 
 ---------------------------------------------------------
 
   BUILT WITH SKYLINE: EVOLVING CSS ARCHITECTURE
 
   See README.md for info and credits
+
+
 
 ---------------------------------------------------------
 
@@ -62,21 +64,13 @@
 
   // Mixins
   //
-  @import "base/mixin-arrows";
-
   @import "base/mixin-breakpoints";
 
   @import "base/mixin-clearfix";
 
-  @import "base/mixin-element-queries";
-
-  @import "base/mixin-flexbox";
-
   @import "base/mixin-font-face-importer";
 
   @import "base/mixin-gradual-media-queries";
-
-  @import "base/mixin-spacing";
 
   // Global
   //
@@ -207,19 +201,3 @@
   @import "modules/thumbnails";
 
   @import "modules/video-embeds";
-
-
-
-
-
-/***
-
-  @vendor
----------------------------------------------------------
-
-  Import CSS files here for any vendor plugin you might
-  be using.
-
----------------------------------------------------------  */
-
-  @import "vendor/skyline-grid-guide";
