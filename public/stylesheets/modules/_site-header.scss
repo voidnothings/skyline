@@ -33,7 +33,7 @@
 ------------------------------------------------------ */
 
 .branding {
-  @include margin(0 auto 1 auto);
+  margin: 0 auto 1*$unit;
   text-decoration: none;
   display: block;
   text-align: center;

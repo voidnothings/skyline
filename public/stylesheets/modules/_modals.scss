@@ -30,7 +30,7 @@
   top: 0; bottom: 0; left: 0; right: 0;
   display: table;
   height: 100%;
-  @include padding(1 1 1 1);
+  padding: 1*$unit;
 }
 
 
@@ -40,7 +40,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  @include margin(.33 .33 n n);
+  margin: .33*$unit .33*$unit 0 0;
   font-size: 3em;
   border: none;
   background: none;

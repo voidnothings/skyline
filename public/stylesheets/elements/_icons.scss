@@ -2,10 +2,14 @@
 
   @icons
 ---------------------------------------------------------
-  base/_icons.scss
+  elements/_icons.scss
 --------------------------------------------------------
 
-  Your icon set may vary, we're starting out with
+  Your icon set may vary. In this partial, you may wish
+  to load in a font icon set and add all the associated
+  css that goes with it. This would be the case if you
+  were using something like Symbolset or IcoMoon for
+  example.
 
 --------------------------------------------------------- */
 
@@ -16,7 +20,9 @@
 /* @icon
 --------------------------------------------------------
 
-  Your open and close icons
+  This is a basic icon element. We set some basic
+  structural styles and display styles to get the ball
+  rolling.
 
   Example: Open Icon
   <i class="icon icon--open">&plus;</i>
@@ -33,8 +39,4 @@
   font-style: normal;
   vertical-align: middle;
   font-size: 1em;
-  img {
-    height: 1em;
-    width: auto;
-  }
 }

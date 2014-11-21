@@ -14,11 +14,8 @@ Skyline is a minimal scaffolding, it does not impose a visual style.  It contain
 The starter files contain as little code as possible.  The structure consists of:
 
 ```
-├── fonts
-|   ├── (example open source font here)
-|
 ├── images
-|   ├── (placeholder images are here)
+|   ├── (placeholder images are here for example pages)
 |
 ├── stylesheets
 |   ├── base
