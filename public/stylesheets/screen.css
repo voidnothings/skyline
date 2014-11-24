@@ -1561,13 +1561,18 @@ em {
   layout/_container.scss
 --------------------------------------------------------
 
-  Restricts content to the site's max width
-  but allows for full color bars for sections.
+  The .container class is applied to restrict the
+  max-width of an element, usually a bit of content.
 
-  Example: Container
+  Often, you will place a .container div within another
+  element that has a background color. This gives you
+  a full-bleed background, but the content is contained
+  within the max-width.
+
+  Example: Container within a section
   <section class="awesome-section-with-background-color">
     <div class="container">
-      <article style='width: 100%; height: 5em; background-color: #eee; border: 1px solid #ccc;'>.</article>
+      <p>Your content goes here... </p>
     </div>
   </section>
 
@@ -3114,8 +3119,7 @@ em {
 
 -----------------------------------------------------  */
 .block {
-  margin-bottom: 1.125em;
-  padding-bottom: 1.125em; }
+  margin-bottom: 1.125em; }
 
 .block--ends {
   margin-top: 1.125em;
